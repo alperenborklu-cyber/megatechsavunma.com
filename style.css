@@ -580,9 +580,20 @@ html[lang="tr"] .btn {
     margin-bottom: 0.5rem;
 }
 
+.info-link {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
 .info-value {
     font-size: 1.2rem;
     color: white;
+    transition: var(--transition);
+}
+
+.info-link:hover .info-value {
+    color: var(--accent-orange);
 }
 
 .contact-form {

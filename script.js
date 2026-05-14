@@ -131,6 +131,7 @@ const translations = {
         blog_post15_title: "Megatech Vision 2030",
         blog_post15_excerpt: "Megatech's strategic goals and innovation roadmap in future defense technologies.",
         back_to_blog: "Back to Blog",
+        open_in_maps: "Open in Maps",
         blog_post4_p1: "The aerospace sector has redefined the concept of tolerance. A 0.05 mm thickness difference in an aircraft engine fan blade can lead to metal fatigue and disaster at 30,000 feet. In space systems, these tolerances drop to nanometer levels.",
         blog_post4_h2_1: "Precision Manufacturing in Aerospace",
         blog_post4_p2: "At our facilities certified with the AS9100D aerospace quality management system, we produce these critical components:",
@@ -463,7 +464,8 @@ const translations = {
         blog_post15_h2_2: "Küresel Mühendislik Ağı",
         blog_post15_p3: "Ankara merkezli üretimimizi, Avrupa ve Amerika'da açacağımız tasarım ve mühendislik ofisleriyle destekleyerek, Megatech'i bir dünya markası haline getireceğiz. Sadece parça üretmiyoruz; küresel güvenliğin geleceğini inşa ediyoruz.",
         blog_post15_p4: "Gelecek, onu bugünden tasarlayanlarındır. Megatech ile bu geleceğe hazır olun.",
-        back_to_blog: "Blog'a dön"
+        back_to_blog: "Blog'a dön",
+        open_in_maps: "Haritalarda Aç"
     }
 };
 
