@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - MEGATECH Defense</title>
+    <title>İletişim - MEGATECH Savunma</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +21,10 @@
                 </a>
             </div>
             <nav class="nav-links">
-                <a href="/#innovation" class="nav-link" data-i18n="nav_innovation">Innovation</a>
-                <a href="/#about" class="nav-link" data-i18n="nav_about">About Us</a>
-                <a href="contact" class="nav-link active contact-btn" data-i18n="nav_contact">Contact</a>
-                <button id="lang-toggle" class="lang-btn">TR</button>
+                <a href="/#innovation" class="nav-link" data-i18n="nav_innovation">İNOVASYON</a>
+                <a href="/#about" class="nav-link" data-i18n="nav_about">HAKKIMIZDA</a>
+                <a href="contact" class="nav-link active contact-btn" data-i18n="nav_contact">İLETİŞİM</a>
+                <button id="lang-toggle" class="lang-btn">EN</button>
             </nav>
             <div class="menu-toggle" id="mobile-menu">
                 <span></span>
@@ -37,8 +37,8 @@
     <main>
         <section class="contact-page-hero">
             <div class="container">
-                <h1 data-i18n="contact_page_title">Contact Our <span class="logo-accent">Experts</span></h1>
-                <p data-i18n="contact_page_subtitle">We are ready to provide the precision engineering solutions your project requires.</p>
+                <h1 data-i18n="contact_page_title">UZMANLARIMIZLA <span class="logo-accent">İLETİŞİME GEÇİN</span></h1>
+                <p data-i18n="contact_page_subtitle">Projenizin gerektirdiği hassas mühendislik çözümlerini sunmaya hazırız.</p>
             </div>
         </section>
 
@@ -46,18 +46,18 @@
             <div class="container">
                 <div class="contact-container">
                     <div class="contact-info-box">
-                        <h3 data-i18n="contact_h3">Direct Contact</h3>
-                        <p data-i18n="contact_desc_dedicated">Reach out to our engineering team directly for technical inquiries or quote requests.</p>
+                        <h3 data-i18n="contact_h3">Doğrudan İletişim</h3>
+                        <p data-i18n="contact_desc_dedicated">Teknik sorularınız veya fiyat teklifi talepleriniz için doğrudan mühendislik ekibimize ulaşın.</p>
                         <div class="info-item">
-                            <span class="info-label" data-i18n="info_email">Email:</span>
+                            <span class="info-label" data-i18n="info_email">E-posta:</span>
                             <span class="info-value">info@megatech.com</span>
                         </div>
                         <div class="info-item">
-                            <span class="info-label" data-i18n="info_office">Corporate Office:</span>
+                            <span class="info-label" data-i18n="info_office">Genel Merkez:</span>
                             <span class="info-value" data-i18n="office_location">Saray Mahallesi, 30. Cd. 15B 06980 Kahramankazan Ankara, Türkiye</span>
                         </div>
                         <div class="info-item">
-                            <span class="info-label" data-i18n="info_phone">Direct Line:</span>
+                            <span class="info-label" data-i18n="info_phone">Doğrudan Hat:</span>
                             <span class="info-value">+90 542 794 84 95</span>
                             <span class="info-value">+90 544 812 77 15</span>
                         </div>
@@ -65,23 +65,23 @@
                     <div class="contact-form-box">
                         <form action="https://formspree.io/f/info@megatech.com" method="POST" class="contact-form">
                             <div class="form-group">
-                                <label for="name" data-i18n="label_name">Full Name</label>
-                                <input type="text" id="name" name="name" placeholder="John Doe" data-i18n-placeholder="placeholder_name_val" required>
+                                <label for="name" data-i18n="label_name">Ad Soyad</label>
+                                <input type="text" id="name" name="name" placeholder="Ahmet Yılmaz" data-i18n-placeholder="placeholder_name_val" required>
                             </div>
                             <div class="form-group">
-                                <label for="email" data-i18n="label_email">Email Address</label>
-                                <input type="email" id="email" name="_replyto" placeholder="john@example.com" data-i18n-placeholder="placeholder_email_val" required>
+                                <label for="email" data-i18n="label_email">E-posta Adresi</label>
+                                <input type="email" id="email" name="_replyto" placeholder="ahmet@ornek.com" data-i18n-placeholder="placeholder_email_val" required>
                             </div>
                             <div class="form-group">
-                                <label for="sector" data-i18n="label_sector">Industry Sector</label>
-                                <input type="text" id="sector" name="sector" placeholder="Defense / Aerospace / Medical" data-i18n-placeholder="placeholder_sector">
+                                <label for="sector" data-i18n="label_sector">Sektör</label>
+                                <input type="text" id="sector" name="sector" placeholder="Savunma / Havacılık / Medikal" data-i18n-placeholder="placeholder_sector">
                             </div>
                             <div class="form-group">
-                                <label for="message" data-i18n="label_message">Your Message</label>
-                                <textarea id="message" name="message" rows="6" placeholder="Describe your project requirements..." data-i18n-placeholder="placeholder_message_val" required></textarea>
+                                <label for="message" data-i18n="label_message">Mesajınız</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Proje gereksinimlerinizi açıklayın..." data-i18n-placeholder="placeholder_message_val" required></textarea>
                             </div>
                             <input type="hidden" name="_next" value="contact?success=true">
-                            <button type="submit" class="btn btn-primary" data-i18n="btn_send_secure">Send Secure Message</button>
+                            <button type="submit" class="btn btn-primary" data-i18n="btn_send_secure">EKİBİMİZLE İLETİŞİME GEÇİN</button>
                         </form>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                             <div class="logo-subtext">SAVUNMA TECHNOLOGY</div>
                         </div>
                         <p class="brand-desc" data-i18n="footer_desc">
-                            Leading the way in advanced defense technologies, aerospace engineering, and tactical systems. Engineering the future of global security.
+                            Gelişmiş savunma teknolojileri, havacılık mühendisliği ve taktik sistemlerde öncü. Küresel güvenliğin geleceğini inşa ediyoruz.
                         </p>
                         <div class="social-links">
                             <a href="#" class="social-icon">LinkedIn</a>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                     <div class="footer-links">
-                        <h3 data-i18n="footer_contact">CONTACT</h3>
+                        <h3 data-i18n="footer_contact">İLETİŞİM</h3>
                         <ul>
                             <li data-i18n="footer_location">Saray Mahallesi, 30. Cd. 15B 06980 Kahramankazan Ankara, Türkiye</li>
                             <li>info@megatech.com</li>
@@ -122,7 +122,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <div class="copyright">&copy; 2026 MEGATECH DEFENSE. <span data-i18n="footer_rights">All rights reserved.</span></div>
+                <div class="copyright">&copy; 2026 MEGATECH DEFENSE. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></div>
             </div>
         </div>
     </footer>

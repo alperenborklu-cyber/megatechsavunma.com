@@ -127,7 +127,7 @@ const translations = {
     }
 };
 
-let currentLang = 'en';
+let currentLang = 'tr';
 
 function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'tr' : 'en';
@@ -178,7 +178,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Initialize with preferred language or default to 'en'
+// Initialize with preferred language or default to 'tr'
 window.onload = () => {
     const savedLang = localStorage.getItem('preferredLang');
     if (savedLang) {
@@ -186,5 +186,8 @@ window.onload = () => {
         updateContent();
         document.getElementById('lang-toggle').innerText = currentLang === 'en' ? 'TR' : 'EN';
         document.documentElement.setAttribute('lang', currentLang);
+    } else {
+        // Ensure the button text matches the default 'tr'
+        document.getElementById('lang-toggle').innerText = 'EN';
     }
 };
