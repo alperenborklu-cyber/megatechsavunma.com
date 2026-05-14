@@ -462,7 +462,8 @@ const translations = {
         blog_post15_li3: "Sürdürülebilir ve Yeşil Savunma: Üretim tesisimizin enerji ihtiyacının %100'ünü yenilenebilir kaynaklardan karşılayarak, karbon ayak izi sıfır olan 'Yeşil Savunma İmalatı' öncüsü olacağız.",
         blog_post15_h2_2: "Küresel Mühendislik Ağı",
         blog_post15_p3: "Ankara merkezli üretimimizi, Avrupa ve Amerika'da açacağımız tasarım ve mühendislik ofisleriyle destekleyerek, Megatech'i bir dünya markası haline getireceğiz. Sadece parça üretmiyoruz; küresel güvenliğin geleceğini inşa ediyoruz.",
-        blog_post15_p4: "Gelecek, onu bugünden tasarlayanlarındır. Megatech ile bu geleceğe hazır olun."
+        blog_post15_p4: "Gelecek, onu bugünden tasarlayanlarındır. Megatech ile bu geleceğe hazır olun.",
+        back_to_blog: "Blog'a dön"
     }
 };
 
