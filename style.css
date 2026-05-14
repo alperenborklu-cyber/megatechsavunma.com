@@ -277,7 +277,8 @@ html[lang="tr"] .btn {
     font-size: 1.3rem;
     color: var(--text-secondary);
     margin-bottom: 3rem;
-    max-width: 600px;
+    max-width: 900px; /* Increased to allow one-line slogan */
+    line-height: 1.4;
 }
 
 .hero-btns {
