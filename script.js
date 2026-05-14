@@ -181,13 +181,27 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // Initialize with preferred language or default to 'tr'
 window.onload = () => {
     const savedLang = localStorage.getItem('preferredLang');
-    if (savedLang) {
+    const version = localStorage.getItem('siteVersion');
+    const currentVersion = '1.1'; // Increment this to force a language reset if needed
+
+    if (version !== currentVersion) {
+        // First time visiting this version, default to Turkish and clear old preference
+        currentLang = 'tr';
+        localStorage.setItem('preferredLang', 'tr');
+        localStorage.setItem('siteVersion', currentVersion);
+        updateContent();
+        document.getElementById('lang-toggle').innerText = 'EN';
+        document.documentElement.setAttribute('lang', 'tr');
+    } else if (savedLang) {
         currentLang = savedLang;
         updateContent();
         document.getElementById('lang-toggle').innerText = currentLang === 'en' ? 'TR' : 'EN';
         document.documentElement.setAttribute('lang', currentLang);
     } else {
-        // Ensure the button text matches the default 'tr'
+        // Ensure the button text and content match the default 'tr'
+        currentLang = 'tr';
+        updateContent();
         document.getElementById('lang-toggle').innerText = 'EN';
+        document.documentElement.setAttribute('lang', 'tr');
     }
 };
