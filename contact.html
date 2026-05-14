@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MEGATECH Defense</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="WhatsApp Image 2026-05-14 at 20.46.49.jpeg" alt="Megatech Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html#capabilities" class="nav-link" data-i18n="nav_capabilities">Capabilities</a>
+                <a href="index.html#innovation" class="nav-link" data-i18n="nav_innovation">Innovation</a>
+                <a href="index.html#about" class="nav-link" data-i18n="nav_about">About Us</a>
+                <a href="contact.html" class="nav-link active contact-btn" data-i18n="nav_contact">Contact</a>
+                <button id="lang-toggle" class="lang-btn">TR</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-page-hero">
+            <div class="container">
+                <h1 data-i18n="contact_page_title">Contact Our <span class="logo-accent">Experts</span></h1>
+                <p data-i18n="contact_page_subtitle">We are ready to provide the precision engineering solutions your project requires.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info-box">
+                        <h3 data-i18n="contact_h3">Direct Contact</h3>
+                        <p data-i18n="contact_desc_dedicated">Reach out to our engineering team directly for technical inquiries or quote requests.</p>
+                        <div class="info-item">
+                            <span class="info-label" data-i18n="info_email">Email:</span>
+                            <span class="info-value">info@megatech.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label" data-i18n="info_office">Corporate Office:</span>
+                            <span class="info-value" data-i18n="office_location">Saray Mahallesi, 30. Cd. 15B 06980 Kahramankazan Ankara, Türkiye</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label" data-i18n="info_phone">Direct Line:</span>
+                            <span class="info-value">+90 542 794 84 95</span>
+                            <span class="info-value">+90 544 812 77 15</span>
+                        </div>
+                    </div>
+                    <div class="contact-form-box">
+                        <form action="https://formspree.io/f/info@megatech.com" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" data-i18n="label_name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" data-i18n-placeholder="placeholder_name_val" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n="label_email">Email Address</label>
+                                <input type="email" id="email" name="_replyto" placeholder="john@example.com" data-i18n-placeholder="placeholder_email_val" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sector" data-i18n="label_sector">Industry Sector</label>
+                                <input type="text" id="sector" name="sector" placeholder="Defense / Aerospace / Medical" data-i18n-placeholder="placeholder_sector">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="label_message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Describe your project requirements..." data-i18n-placeholder="placeholder_message_val" required></textarea>
+                            </div>
+                            <input type="hidden" name="_next" value="contact.html?success=true">
+                            <button type="submit" class="btn btn-primary" data-i18n="btn_send_secure">Send Secure Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="logo-text">
+                            <span class="logo-accent">MEGA</span>TECH
+                            <div class="logo-subtext">SAVUNMA TECHNOLOGY</div>
+                        </div>
+                        <p class="brand-desc" data-i18n="footer_desc">
+                            Leading the way in advanced defense technologies, aerospace engineering, and tactical systems. Engineering the future of global security.
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <h3 data-i18n="footer_contact">CONTACT</h3>
+                        <ul>
+                            <li data-i18n="footer_location">Saray Mahallesi, 30. Cd. 15B 06980 Kahramankazan Ankara, Türkiye</li>
+                            <li>info@megatech.com</li>
+                            <li>+90 542 794 84 95</li>
+                            <li>+90 544 812 77 15</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">&copy; 2026 MEGATECH DEFENSE. <span data-i18n="footer_rights">All rights reserved.</span></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>

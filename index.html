@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGATECH - Defense Industry Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="WhatsApp Image 2026-05-14 at 20.46.49.jpeg" alt="Megatech Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="#capabilities" class="nav-link" data-i18n="nav_capabilities">Capabilities</a>
+                <a href="#innovation" class="nav-link" data-i18n="nav_innovation">Innovation</a>
+                <a href="#about" class="nav-link" data-i18n="nav_about">About Us</a>
+                <a href="contact.html" class="nav-link contact-btn" data-i18n="nav_contact">Contact</a>
+                <button id="lang-toggle" class="lang-btn">TR</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="low.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-i18n="hero_title">Defense Technologies <br>of the <span class="logo-accent">Future</span></h1>
+                    <p data-i18n="hero_subtitle">Shaping global security through next-generation high-precision production solutions.</p>
+                    <div class="hero-btns">
+                        <a href="#about" class="btn btn-primary" data-i18n="btn_explore">Explore</a>
+                        <a href="contact.html" class="btn btn-outline" data-i18n="btn_contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="about_title">About Us</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="highlight" data-i18n="about_p1">Megatech Defense is an innovative engineering firm offering high-precision production solutions in CNC sliding head machine technologies.</p>
+                        <p data-i18n="about_p2">We specialize in manufacturing precision parts for mission-critical sectors, including defense, automotive, aerospace, medical, and industrial production.</p>
+                        <p data-i18n="about_p3">Leveraging our state-of-the-art CNC sliding head machinery and robust infrastructure, we produce components with complex geometries to the highest quality standards. Our serial production processes are engineered for reliability, ensuring dimensional precision and customer satisfaction at every stage.</p>
+                        <p data-i18n="about_p4">Our mission is to integrate advanced technology with superior engineering and precision manufacturing, delivering the reliable solutions our industry demands while maintaining a commitment to sustainable quality.</p>
+                    </div>
+                    <div class="about-visual">
+                        <div class="experience-card">
+                            <span class="exp-number">15+</span>
+                            <span class="exp-text" data-i18n="exp_text">Years of Experience</span>
+                        </div>
+                        <div class="tech-grid-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info-box">
+                        <h3 data-i18n="contact_h3">Get in Touch</h3>
+                        <p data-i18n="contact_desc">Our team of experts is ready to discuss your high-precision manufacturing requirements.</p>
+                        <div class="info-item">
+                            <span class="info-label" data-i18n="info_email">Email:</span>
+                            <span class="info-value">info@megatech.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label" data-i18n="info_location">Location:</span>
+                            <span class="info-value">Saray Mahallesi, 30. Cd. 15B 06980 Kahramankazan Ankara, Türkiye</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label" data-i18n="info_phone">Phone:</span>
+                            <span class="info-value">+90 542 794 84 95</span>
+                            <span class="info-value">+90 544 812 77 15</span>
+                        </div>
+                    </div>
+                    <div class="contact-form-box">
+                        <form action="https://formspree.io/f/info@megatech.com" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" data-i18n-placeholder="placeholder_name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" data-i18n-placeholder="placeholder_email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Subject" data-i18n-placeholder="placeholder_subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" rows="5" placeholder="Your Message" data-i18n-placeholder="placeholder_message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="logo-text">
+                            <span class="logo-accent">MEGA</span>TECH
+                            <div class="logo-subtext">SAVUNMA TECHNOLOGY</div>
+                        </div>
+                        <p class="brand-desc" data-i18n="footer_desc">
+                            Leading the way in advanced defense technologies, aerospace engineering, and tactical systems. Engineering the future of global security.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon">LinkedIn</a>
+                            <a href="#" class="social-icon">X</a>
+                            <a href="#" class="social-icon">Instagram</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3 data-i18n="footer_capabilities">CAPABILITIES</h3>
+                        <ul>
+                            <li><a href="#" data-i18n="link_aerospace">Aerospace Systems</a></li>
+                            <li><a href="#" data-i18n="link_naval">Naval Engineering</a></li>
+                            <li><a href="#" data-i18n="link_land">Land Defense</a></li>
+                            <li><a href="#" data-i18n="link_cyber">Cyber Security</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 data-i18n="footer_resources">RESOURCES</h3>
+                        <ul>
+                            <li><a href="#" data-i18n="link_docs">Technical Docs</a></li>
+                            <li><a href="#" data-i18n="link_career">Career Portal</a></li>
+                            <li><a href="#" data-i18n="link_press">Press Room</a></li>
+                            <li><a href="#" data-i18n="link_sustainability">Sustainability</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 data-i18n="footer_contact">CONTACT</h3>
+                        <ul>
+                            <li data-i18n="footer_location">Saray Mahallesi, 30. Cd. 15B 06980 Kahramankazan Ankara, Türkiye</li>
+                            <li>info@megatech.com</li>
+                            <li>+90 542 794 84 95</li>
+                            <li>+90 544 812 77 15</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    &copy; 2026 MEGATECH DEFENSE. <span data-i18n="footer_rights">All rights reserved.</span>
+                </div>
+                <div class="legal-links">
+                    <a href="#" data-i18n="link_privacy">Privacy Policy</a>
+                    <a href="#" data-i18n="link_terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
