@@ -1,12 +1,14 @@
 :root {
-    --bg-dark: #0A0B0E;
-    --bg-card: #14161B;
+    --bg-dark: #07080A;
+    --bg-card: #0F1115;
     --accent-orange: #FF6B00;
-    --text-primary: #E0E0E0;
-    --text-secondary: #A0A0A0;
-    --glass-border: rgba(255, 107, 0, 0.1);
-    --header-height: 160px;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --accent-glow: rgba(255, 107, 0, 0.15);
+    --text-primary: #F0F0F0;
+    --text-secondary: #8E9196;
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --header-height: 140px;
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --section-padding: 12rem;
 }
 
 * {
@@ -627,25 +629,42 @@ html[lang="tr"] .btn {
 
 .contact-page-hero,
 .page-hero {
-    height: 40vh;
+    min-height: 50vh;
     padding-top: var(--header-height);
     display: flex;
     align-items: center;
-    background: radial-gradient(circle at 70% 30%, rgba(255, 107, 0, 0.05) 0%, transparent 50%),
+    position: relative;
+    background: radial-gradient(circle at 70% 30%, rgba(255, 107, 0, 0.03) 0%, transparent 50%),
                 var(--bg-dark);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-orange), transparent);
+    opacity: 0.2;
 }
 
 .contact-page-hero h1,
 .page-hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+    line-height: 1;
 }
 
 .contact-page-hero p,
 .page-hero p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--text-secondary);
-    max-width: 600px;
+    max-width: 700px;
+    line-height: 1.6;
 }
 
 /* --- Footer Styling --- */
@@ -910,72 +929,199 @@ html[lang="tr"] .btn {
 
 /* --- Blog Section --- */
 .blog-listing {
-    padding: 6rem 0;
+    padding: var(--section-padding) 0;
+    background: var(--bg-dark);
 }
 
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 4rem;
 }
 
 .blog-card {
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--bg-card);
     border: 1px solid var(--glass-border);
-    border-radius: 12px;
+    border-radius: 4px; /* More tactical, less rounded */
     overflow: hidden;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+/* Tactical corner accent */
+.blog-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg, var(--accent-orange) 50%, transparent 50%);
+    opacity: 0;
+    transition: var(--transition);
 }
 
 .blog-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-orange);
-    box-shadow: 0 15px 30px rgba(255, 107, 0, 0.1);
+    transform: translateY(-12px);
+    border-color: rgba(255, 107, 0, 0.3);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.blog-card:hover::after {
+    opacity: 0.6;
 }
 
 .blog-card-content {
-    padding: 2.5rem;
+    padding: 3.5rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
 .blog-date {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--accent-orange);
-    margin-bottom: 1rem;
-    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.blog-date::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: var(--accent-orange);
 }
 
 .blog-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     color: white;
-    line-height: 1.3;
+    line-height: 1.2;
+    font-weight: 600;
 }
 
 .blog-card p {
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
-    line-height: 1.6;
+    margin-bottom: 3rem;
+    line-height: 1.8;
 }
 
 .btn-text {
-    color: var(--accent-orange);
+    color: white;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 700;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-top: auto;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.btn-text::after {
+    content: '→';
+    transition: var(--transition);
 }
 
 .btn-text:hover {
+    color: var(--accent-orange);
+    gap: 1.5rem;
+}
+
+/* --- Blog Post Detail --- */
+.blog-post-page {
+    background: var(--bg-dark);
+}
+
+.blog-post-content {
+    padding: 8rem 0;
+}
+
+.post-body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.post-body p {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    line-height: 2;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.post-body h2 {
+    font-size: 2.5rem;
     color: white;
+    margin: 5rem 0 2rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.post-body h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 80%;
+    background: var(--accent-orange);
+}
+
+.post-body ul {
+    margin: 3rem 0;
+    list-style: none;
+}
+
+.post-body li {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.8;
+}
+
+.post-body li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--accent-orange);
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.post-footer {
+    max-width: 900px;
+    margin: 6rem auto 0;
+    padding-top: 4rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.btn-outline {
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.btn-outline:hover {
+    border-color: var(--accent-orange);
+    background: var(--accent-glow);
 }
