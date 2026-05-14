@@ -142,6 +142,27 @@ function updateContent() {
 
 document.getElementById('lang-toggle').addEventListener('click', toggleLanguage);
 
+// Mobile Menu Toggle
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileMenu) {
+    mobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+}
+
+// Close menu when a link is clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        if (mobileMenu) {
+            mobileMenu.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+});
+
 // Initialize with preferred language or default to 'en'
 window.onload = () => {
     const savedLang = localStorage.getItem('preferredLang');
