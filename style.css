@@ -624,7 +624,8 @@ html[lang="tr"] .btn {
     font-weight: 600;
 }
 
-.contact-page-hero {
+.contact-page-hero,
+.page-hero {
     height: 40vh;
     padding-top: var(--header-height);
     display: flex;
@@ -633,12 +634,14 @@ html[lang="tr"] .btn {
                 var(--bg-dark);
 }
 
-.contact-page-hero h1 {
+.contact-page-hero h1,
+.page-hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
 }
 
-.contact-page-hero p {
+.contact-page-hero p,
+.page-hero p {
     font-size: 1.2rem;
     color: var(--text-secondary);
     max-width: 600px;
