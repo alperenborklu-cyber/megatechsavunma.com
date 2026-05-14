@@ -401,22 +401,27 @@ html[lang="tr"] .btn {
 
 .experience-card {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(20, 22, 27, 0.85);
+    bottom: 2rem;
+    left: 2rem;
+    background: rgba(20, 22, 27, 0.9);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 107, 0, 0.3);
-    padding: 3rem;
-    border-radius: 12px;
-    text-align: center;
-    z-index: 4;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 107, 0, 0.4);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: var(--transition);
+}
+
+.experience-card:hover {
+    border-color: var(--accent-orange);
+    transform: translateY(-5px);
 }
 
 .exp-number {
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     color: var(--accent-orange);
@@ -424,10 +429,10 @@ html[lang="tr"] .btn {
 }
 
 .exp-text {
-    font-size: 1rem;
+    font-size: 0.85rem;
     color: var(--text-secondary);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .tech-grid-bg {
