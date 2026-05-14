@@ -2,6 +2,7 @@ const translations = {
     en: {
         nav_capabilities: "Capabilities",
         nav_innovation: "Innovation",
+        nav_reviews: "Reviews",
         nav_about: "About Us",
         nav_contact: "Contact",
         hero_title: 'Defense Technologies <br>of the <span class="logo-accent">Future</span>',
@@ -15,6 +16,7 @@ const translations = {
         about_p4: "Our mission is to integrate advanced technology with superior engineering and precision manufacturing, delivering the reliable solutions our industry demands while maintaining a commitment to sustainable quality.",
         exp_text: "Years of Experience",
         innovation_title: "Innovation",
+        reviews_title: "Customer Reviews",
         inn_card1_title: "AI-Powered Precision",
         inn_card1_desc: "Integrating advanced artificial intelligence to optimize CNC processes and ensure zero-defect manufacturing.",
         inn_card2_title: "Autonomous Systems",
@@ -65,6 +67,7 @@ const translations = {
     tr: {
         nav_capabilities: "YETENEKLER",
         nav_innovation: "İNOVASYON",
+        nav_reviews: "YORUMLAR",
         nav_about: "HAKKIMIZDA",
         nav_contact: "İLETİŞİM",
         hero_title: 'GELECEĞİN SAVUNMA <br><span class="logo-accent">TEKNOLOJİLERİ</span>',
@@ -78,6 +81,7 @@ const translations = {
         about_p4: "Megatech Savunma olarak hedefimiz; teknolojiyi, mühendisliği ve hassas üretimi bir araya getirerek sektörün ihtiyaç duyduğu güvenilir çözümleri sunmak ve üretimde sürdürülebilir kalite anlayışını devam ettirmektir.",
         exp_text: "Yıllık Tecrübe",
         innovation_title: "İNOVASYON",
+        reviews_title: "MÜŞTERİ YORUMLARI",
         inn_card1_title: "YAPAY ZEKA DESTEKLİ HASSASİYET",
         inn_card1_desc: "CNC süreçlerini optimize etmek ve sıfır hata üretim sağlamak için gelişmiş yapay zekayı entegre ediyoruz.",
         inn_card2_title: "OTONOM SİSTEMLER",
