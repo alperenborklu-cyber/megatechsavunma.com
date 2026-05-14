@@ -29,6 +29,16 @@ h1, h2, h3, .logo {
     letter-spacing: 1px;
 }
 
+/* Fix for Turkish uppercase 'İ' */
+html[lang="tr"] h1, 
+html[lang="tr"] h2, 
+html[lang="tr"] h3, 
+html[lang="tr"] .logo,
+html[lang="tr"] .nav-link,
+html[lang="tr"] .btn {
+    text-transform: none; /* We handle uppercase manually in the dictionary for Turkish */
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;

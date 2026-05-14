@@ -56,22 +56,22 @@ const translations = {
         btn_send_secure: "Send Secure Message"
     },
     tr: {
-        nav_capabilities: "Yetenekler",
-        nav_innovation: "İnovasyon",
-        nav_about: "Hakkımızda",
-        nav_contact: "İletişim",
-        hero_title: 'Geleceğin Savunma <br><span class="logo-accent">Teknolojileri</span>',
+        nav_capabilities: "YETENEKLER",
+        nav_innovation: "İNOVASYON",
+        nav_about: "HAKKIMIZDA",
+        nav_contact: "İLETİŞİM",
+        hero_title: 'GELECEĞİN SAVUNMA <br><span class="logo-accent">TEKNOLOJİLERİ</span>',
         hero_subtitle: "Yüksek hassasiyetli üretim çözümleri ile global güvenliğe yön veriyoruz.",
-        btn_explore: "Keşfedin",
-        btn_contact: "İletişim",
-        about_title: "Hakkımızda",
+        btn_explore: "KEŞFEDİN",
+        btn_contact: "İLETİŞİM",
+        about_title: "HAKKIMIZDA",
         about_p1: "Megatech Savunma, CNC kayar otomat işleme teknolojilerinde yüksek hassasiyetli üretim çözümleri sunan yenilikçi bir mühendislik firmasıdır.",
         about_p2: "Savunma sanayi başta olmak üzere otomotiv, havacılık, medikal ve endüstriyel üretim sektörlerine yönelik hassas parça imalatı gerçekleştirmektedir.",
         about_p3: "Modern CNC kayar otomat makineleri ve güçlü üretim altyapımız sayesinde; karmaşık geometrilere sahip parçaları yüksek kalite standartlarında, seri ve güvenilir şekilde üretmekteyiz. Üretim süreçlerimizin her aşamasında kalite kontrol, ölçü hassasiyeti ve müşteri memnuniyeti ön planda tutulmaktadır.",
         about_p4: "Megatech Savunma olarak hedefimiz; teknolojiyi, mühendisliği ve hassas üretimi bir araya getirerek sektörün ihtiyaç duyduğu güvenilir çözümleri sunmak ve üretimde sürdürülebilir kalite anlayışını devam ettirmektir.",
         exp_text: "Yıllık Tecrübe",
-        contact_title: "İletişim",
-        contact_h3: "İletişime Geçin",
+        contact_title: "İLETİŞİM",
+        contact_h3: "İLETİŞİME GEÇİN",
         contact_desc: "Uzman ekibimiz, yüksek hassasiyetli üretim ihtiyaçlarınızı görüşmek için hazır.",
         info_email: "E-posta:",
         info_location: "Konum:",
@@ -97,7 +97,7 @@ const translations = {
         footer_rights: "Tüm hakları saklıdır.",
         link_privacy: "Gizlilik Politikası",
         link_terms: "Kullanım Şartları",
-        contact_page_title: 'Uzmanlarımızla <span class="logo-accent">İletişime Geçin</span>',
+        contact_page_title: 'UZMANLARIMIZLA <span class="logo-accent">İLETİŞİME GEÇİN</span>',
         contact_page_subtitle: "Projenizin gerektirdiği hassas mühendislik çözümlerini sunmaya hazırız.",
         contact_desc_dedicated: "Teknik sorularınız veya fiyat teklifi talepleriniz için doğrudan mühendislik ekibimize ulaşın.",
         info_office: "Genel Merkez:",
@@ -119,6 +119,7 @@ function toggleLanguage() {
     currentLang = currentLang === 'en' ? 'tr' : 'en';
     updateContent();
     document.getElementById('lang-toggle').innerText = currentLang === 'en' ? 'TR' : 'EN';
+    document.documentElement.setAttribute('lang', currentLang);
     localStorage.setItem('preferredLang', currentLang);
 }
 
@@ -170,5 +171,6 @@ window.onload = () => {
         currentLang = savedLang;
         updateContent();
         document.getElementById('lang-toggle').innerText = currentLang === 'en' ? 'TR' : 'EN';
+        document.documentElement.setAttribute('lang', currentLang);
     }
 };
