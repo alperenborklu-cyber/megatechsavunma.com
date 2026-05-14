@@ -60,7 +60,7 @@ const translations = {
         placeholder_name_val: "John Doe",
         placeholder_email_val: "john@example.com",
         placeholder_message_val: "Describe your project requirements...",
-        btn_send_secure: "Send Secure Message"
+        btn_send_secure: "Contact Our Team"
     },
     tr: {
         nav_capabilities: "YETENEKLER",
@@ -94,7 +94,7 @@ const translations = {
         placeholder_email: "E-posta Adresiniz",
         placeholder_subject: "Konu",
         placeholder_message: "Mesajınız",
-        btn_send: "Mesaj Gönder",
+        btn_send: "MESAJ GÖNDER",
         footer_desc: "Gelişmiş savunma teknolojileri, havacılık mühendisliği ve taktik sistemlerde öncü. Küresel güvenliğin geleceğini inşa ediyoruz.",
         footer_capabilities: "YETENEKLER",
         footer_resources: "KAYNAKLAR",
@@ -123,7 +123,7 @@ const translations = {
         placeholder_name_val: "Ahmet Yılmaz",
         placeholder_email_val: "ahmet@ornek.com",
         placeholder_message_val: "Proje gereksinimlerinizi açıklayın...",
-        btn_send_secure: "Güvenli Mesaj Gönder"
+        btn_send_secure: "EKİBİMİZLE İLETİŞİME GEÇİN"
     }
 };
 
