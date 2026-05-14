@@ -418,42 +418,6 @@ html[lang="tr"] .btn {
 }
 
 
-/* --- Capabilities Section --- */
-.capabilities-section {
-    padding: 10rem 0;
-    background: var(--bg-card);
-}
-
-.capabilities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-}
-
-.capability-item {
-    padding: 3rem;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 107, 0, 0.1);
-    border-radius: 8px;
-    transition: var(--transition);
-}
-
-.capability-item:hover {
-    background: rgba(255, 107, 0, 0.05);
-    border-color: var(--accent-orange);
-    transform: translateY(-10px);
-}
-
-.capability-item h3 {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.capability-item p {
-    color: var(--text-secondary);
-}
-
 /* --- Innovation Section --- */
 .innovation-section {
     padding: 10rem 0;
