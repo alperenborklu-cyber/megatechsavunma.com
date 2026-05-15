@@ -528,3 +528,52 @@ window.onload = () => {
     document.documentElement.setAttribute('lang', 'tr');
     localStorage.setItem('preferredLang', 'tr');
 };
+
+// --- Elegant Scroll Reveal Observer ---
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Assign reveal classes to elements dynamically if not already present
+    document.querySelectorAll('.section-title, .about-text, .page-hero h1, .contact-page-hero h1, .footer-brand').forEach(el => el.classList.add('reveal-up'));
+    document.querySelectorAll('.contact-info-box, .footer-links:nth-child(2)').forEach(el => el.classList.add('reveal-left'));
+    document.querySelectorAll('.contact-form-box, .footer-links:nth-child(3)').forEach(el => el.classList.add('reveal-right'));
+    document.querySelectorAll('.about-visual, .innovation-card, .blog-card, .map-container, .post-body p, .post-body h2').forEach(el => el.classList.add('reveal-scale'));
+    document.querySelectorAll('.section-line').forEach(el => el.classList.add('reveal-line'));
+
+    const observerOptions = {
+        threshold: 0.12,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    let staggerDelay = 0;
+    let staggerTimeout = null;
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                observer.unobserve(el);
+
+                if (el.classList.contains('innovation-card') || el.classList.contains('blog-card')) {
+                    setTimeout(() => {
+                        el.classList.add('reveal-active');
+                        setTimeout(() => {
+                            el.classList.remove('reveal-scale', 'reveal-up', 'reveal-left', 'reveal-right', 'reveal-line', 'reveal-active');
+                        }, 1000);
+                    }, staggerDelay);
+                    staggerDelay += 150;
+                    clearTimeout(staggerTimeout);
+                    staggerTimeout = setTimeout(() => { staggerDelay = 0; }, 300);
+                } else {
+                    el.classList.add('reveal-active');
+                    setTimeout(() => {
+                        el.classList.remove('reveal-scale', 'reveal-up', 'reveal-left', 'reveal-right', 'reveal-line', 'reveal-active');
+                    }, 1000);
+                }
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale, .reveal-line').forEach(el => {
+        revealObserver.observe(el);
+    });
+});
+
