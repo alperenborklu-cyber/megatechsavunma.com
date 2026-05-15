@@ -1136,3 +1136,40 @@ html[lang="tr"] .btn {
     border-color: var(--accent-orange);
     background: var(--accent-glow);
 }
+
+/* Video Divider Section */
+.video-divider {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background: var(--bg-dark);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.video-divider video {
+    width: 100%;
+    height: 100.5%; /* Slight over-height for the crop effect */
+    object-fit: cover;
+    object-position: center 49.75%; /* User requested 0.5% crop from top/bottom, so we center it tightly */
+    filter: brightness(0.7) contrast(1.1);
+    display: block;
+}
+
+.video-divider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, 
+        rgba(7, 8, 10, 0.6) 0%, 
+        transparent 20%, 
+        transparent 80%, 
+        rgba(7, 8, 10, 0.6) 100%
+    );
+    pointer-events: none;
+}
+
