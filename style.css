@@ -913,7 +913,17 @@ html[lang="tr"] .btn {
     background: var(--accent-orange);
 }
 
-/* --- Mobile Responsive Enhancements --- */
+/* --- Mobile Responsive Enhancements & Phone Link Styling --- */
+/* Ensure phone numbers detected by iOS Safari or formatted as tel links appear white */
+a[href^="tel"],
+a[href^="tel:"],
+a[x-apple-data-detectors],
+span[x-apple-data-detectors],
+*[x-apple-data-detectors] {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
 @media (max-width: 1200px) {
     .container {
         padding: 0 2rem;
@@ -936,11 +946,19 @@ html[lang="tr"] .btn {
         gap: 3rem;
         padding: 2rem;
     }
+    .blog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 3rem;
+    }
 }
 
 @media (max-width: 768px) {
     :root {
         --header-height: 100px;
+    }
+
+    .container {
+        padding: 0 1.5rem;
     }
 
     .menu-toggle {
@@ -949,6 +967,10 @@ html[lang="tr"] .btn {
 
     .logo-img {
         height: 70px;
+    }
+
+    .logo-text {
+        font-size: 1.8rem;
     }
 
     .nav-links {
@@ -981,6 +1003,7 @@ html[lang="tr"] .btn {
 
     .hero-content p {
         font-size: 1.1rem;
+        margin-bottom: 2rem;
     }
 
     .hero-btns {
@@ -992,30 +1015,144 @@ html[lang="tr"] .btn {
         text-align: center;
     }
 
+    .contact-page-hero h1,
+    .page-hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-page-hero p,
+    .page-hero p {
+        font-size: 1.15rem;
+    }
+
+    .contact-page-hero,
+    .page-hero {
+        min-height: 35vh;
+        padding-top: calc(var(--header-height) + 2rem);
+        padding-bottom: 3rem;
+    }
+
+    .about-section,
+    .innovation-section,
+    .reviews-section,
+    .contact-section,
+    .blog-listing,
+    .blog-post-content {
+        padding: 5rem 0 !important;
+    }
+
+    .about-content {
+        gap: 2.5rem;
+    }
+
+    .about-visual {
+        height: 280px;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    .exp-number {
+        font-size: 2.5rem;
+    }
+
+    .innovation-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .innovation-card {
+        padding: 2.5rem 2rem;
+    }
+
+    .blog-card-content {
+        padding: 2rem;
+    }
+
+    .contact-container {
+        padding: 1.5rem;
+        gap: 2.5rem;
+    }
+
+    .contact-info-box h3 {
+        font-size: 1.6rem;
+    }
+
+    .info-value {
+        font-size: 1.05rem;
+        word-break: break-word;
+    }
+
+    .post-body h2 {
+        font-size: 1.8rem;
+        margin: 3rem 0 1.5rem;
+        padding-left: 1.25rem;
+    }
+
+    .post-body p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 1.75rem;
+    }
+
+    .post-body li {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+        padding-left: 1.5rem;
+    }
+
+    .video-divider {
+        height: 180px;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
 
-    .about-visual {
-        height: 300px;
+    .footer-bottom {
+        padding: 2rem 0;
     }
 
-    .experience-card {
-        padding: 2rem;
+    .footer-bottom .container {
+        flex-direction: column;
+        gap: 1.25rem;
+        text-align: center;
     }
 
-    .exp-number {
-        font-size: 3rem;
+    .legal-links {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
     }
 }
 
 @media (max-width: 480px) {
-    .hero-content h1 {
+    .container {
+        padding: 0 1.25rem;
+    }
+    .hero-content h1,
+    .contact-page-hero h1,
+    .page-hero h1 {
         font-size: 2.2rem;
     }
     .section-title {
         font-size: 2rem;
+    }
+    .about-text p,
+    .innovation-card p,
+    .blog-card p,
+    .contact-info-box p {
+        font-size: 1rem;
+    }
+    .info-value {
+        font-size: 1rem;
     }
 }
 
