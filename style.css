@@ -872,7 +872,13 @@ html[lang="tr"] .btn {
     text-align: center;
     font-size: 0.85rem;
     color: var(--text-secondary);
+    text-decoration: none;
     white-space: nowrap;
+    transition: var(--transition);
+}
+
+.footer-credit:hover {
+    color: white;
 }
 
 .legal-links {
