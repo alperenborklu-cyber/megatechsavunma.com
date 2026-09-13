@@ -858,15 +858,27 @@ html[lang="tr"] .btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .copyright {
+    flex: 1;
     font-size: 0.85rem;
     color: var(--text-secondary);
 }
 
+.footer-credit {
+    flex: 1;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
 .legal-links {
+    flex: 1;
     display: flex;
+    justify-content: flex-end;
     gap: 2rem;
 }
 
@@ -1124,6 +1136,16 @@ span[x-apple-data-detectors],
         flex-direction: column;
         gap: 1.25rem;
         text-align: center;
+    }
+
+    .footer-bottom .copyright,
+    .footer-credit,
+    .legal-links {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        white-space: normal;
     }
 
     .legal-links {
