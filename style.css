@@ -787,21 +787,37 @@ html[lang="tr"] .btn {
 
 .social-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
+    align-items: center;
 }
 
 .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--glass-border);
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
     transition: var(--transition);
 }
 
 .social-icon:hover {
-    color: var(--accent-orange);
+    color: #ffffff;
+    background: var(--accent-orange);
+    border-color: var(--accent-orange);
     transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 107, 0, 0.35);
 }
 
 .footer-links h3 {
